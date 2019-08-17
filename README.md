@@ -3,7 +3,6 @@ A custom module for [astrodistribution.com](https://www.astrodistribution.com).
 ## How to install
 ```
 bin/magento maintenance:enable
-rm -rf composer.lock
 composer clear-cache
 composer require astrodistribution/core:*
 bin/magento setup:upgrade
@@ -26,7 +25,6 @@ bin/magento cache:enable
 ```
 bin/magento maintenance:enable
 composer remove astrodistribution/core
-rm -rf composer.lock
 composer clear-cache
 composer require astrodistribution/core:*
 bin/magento setup:upgrade
