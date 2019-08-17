@@ -1,0 +1,20 @@
+<?php
+/**
+ * 2019-08-17
+ * "Apply a custom design to the empty cart page":
+ * https://github.com/astrodistribution/core/issues/1
+ * https://www.upwork.com/ab/f/contracts/22704307
+ * @var \Magento\Checkout\Block\Cart $block
+ */
+$b = $block; /** @var \Magento\Checkout\Block\Cart $b */
+?>
+<div class='cart-empty'>
+    <?= $b->getChildHtml('checkout_cart_empty_widget') ?>
+	<a
+		class='astro-image'
+		href='<?= $b->escapeUrl($b->getContinueShoppingUrl()) ?>'
+		title='Continue Shopping'
+	></a>
+    <?= $b->getChildHtml('shopping.cart.table.after') ?>
+</div>
+
