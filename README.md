@@ -3,8 +3,8 @@ A custom module for [astrodistribution.com](https://www.astrodistribution.com).
 ## How to install
 ```
 bin/magento maintenance:enable
-composer clear-cache
-composer require astrodistribution/core:*
+php ./composer.phar clear-cache
+php ./composer.phar require astrodistribution/core:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -24,8 +24,8 @@ bin/magento cache:enable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
-composer remove astrodistribution/core
-composer clear-cache
+php ./composer.phar remove astrodistribution/core
+php ./composer.phar clear-cache
 composer require astrodistribution/core:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
