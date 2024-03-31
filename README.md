@@ -1,4 +1,4 @@
-A custom module for [astrodistribution.com](https://www.astrodistribution.com).
+A custom module for [astrodistribution.com](https://www.astrodistribution.com) (Magento 2).
 
 ## How to install
 ```
